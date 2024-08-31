@@ -1,8 +1,6 @@
 package youssef.com.restfullapi.services;
 
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 import youssef.com.restfullapi.api.v1.mapper.CustomerMapper;
 import youssef.com.restfullapi.api.v1.model.CustomerDTO;
 import youssef.com.restfullapi.controllers.v1.CustomerController;
@@ -97,7 +95,6 @@ public class CustomerServiceImpl implements CustomerService {
     private String getCustomerUrl(Long id) {
         return CustomerController.BASE_URL + "/" + id;
     }
-
     @Override
     public void deleteCustomerById(Long id) {
         customerRepository.deleteById(id);

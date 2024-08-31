@@ -2,9 +2,7 @@ package youssef.com.restfullapi.services;
 
 
 
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 import youssef.com.restfullapi.api.v1.mapper.CategoryMapper;
 import youssef.com.restfullapi.api.v1.model.CategoryDTO;
 import youssef.com.restfullapi.repositories.CategoryRepository;
@@ -12,9 +10,7 @@ import youssef.com.restfullapi.repositories.CategoryRepository;
 import java.util.List;
 import java.util.stream.Collectors;
 
-//
-// @Service
-//@ComponentScan("youssef.com.restfullapi")
+
 @Component
 public class CategoryServiceImpl implements CategoryService {
 
